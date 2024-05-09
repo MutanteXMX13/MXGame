@@ -1,0 +1,190 @@
+*{
+  margin: 0px;
+  padding: 0px;
+    overflow-x: hidden;
+    
+
+  
+}
+#container{
+ background: linear-gradient(#1BBCFF, #E4E4E4);
+/*background: linear-gradient(#000000, #D9501B);*/
+  width: 800px;
+  height: 310px;
+  position: relative;
+  overflow: hidden;
+  animation: tempo-anima 10s linear infinite;
+}
+#pipe{
+  bottom: 83px;
+  position: absolute;
+  width: 65px;
+  
+ animation: piper-anima 4s linear infinite;
+ 
+  
+}
+#chao{
+  background-color: green;
+  width: 800px;
+  height: 85px;
+  bottom: 0px;
+  position: absolute;
+  
+}
+#player{
+  bottom: 80px; /*bottom: 80px*/
+  position: absolute;
+  width: 112px;
+  left: 250px;
+}
+#zombie{
+  bottom: 77px; /*bottom: 80px*/
+  position: absolute;
+  width: 112px;
+  left: 10px;
+  animation: zombie-anima 3s ;
+  
+}
+#jumpBT{
+  font-size: 60px;
+  border-radius: 100px;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+  
+}
+#container-menu{
+  background: linear-gradient(blue, white);
+  width: 800px;
+  height: 310px;
+  position: relative;
+  overflow: hidden;
+}
+#menu{
+  
+  position: absolute;
+  font-size: 20px;
+  top: 0px;
+  padding: 10px;
+  left: 0px;
+  transition: 0.3s all ease-out;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#chao2{
+  background-color: green;
+  width: 800px;
+  height: 70px;
+  bottom: 0px;
+  position: absolute;
+  
+}
+#menu a{
+  background-color: #4007D1;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  border: 2px solid black;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+#yt:hover{
+  background-color: red;
+}
+#in:hover{
+  background-color: yellow;
+}
+#git:hover{
+  background-color: black;
+}
+#linkdin:hover{
+  background-color: #0FB8EF;
+}
+#iniciarGame{
+  
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 90px;
+  right: 320px;
+  font-size: 90px;
+  background-color: red;
+  color: white;
+  border-radius: 40px 0px 40px ;
+  transition: 0.4s;
+}
+#iniciarGame:hover{
+  background-color: blue;
+  color: white;
+  border: 2px #12BCE4;
+}
+#nuven{
+  width: 150px;
+  bottom: 215px;
+  position: absolute;
+  /*left: -150px;*/
+  animation: nuven-anima 60s linear infinite;
+}
+#sol{
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  animation: sol-anima 30s infinite linear;
+  
+}
+
+#tempo-game{
+  position: absolute;
+  right: 50px;
+}
+
+/*Animações*/
+
+@keyframes piper-anima{
+  from{right: -30px;}
+  to{right: 794px;}
+}
+@keyframes nuven-anima{
+  from{right: -90px;}
+  to{right: 760px;}
+}
+
+@keyframes pulo-player{
+0% { bottom: 80px; }
+  10% { bottom: 110px; }
+  20% { bottom: 150px; }
+  30% { bottom: 200px; }
+  40% { bottom: 220px; }
+  50% { bottom: 220px; }
+  60% { bottom: 200px; }
+  70% { bottom: 180px; }
+  80% { bottom: 160px; }
+  90% { bottom: 110px; }
+  100% { bottom: 80px; }
+  
+}
+
+@keyframes zombie-anima{
+  from{left: 10px;}
+  to{left: 250px}
+}
+@keyframes sol-anima{
+  0%{transform: rotate(0deg)}
+  10%{transform: rotate(10deg)}
+  20%{transform: rotate(20deg)}
+  30%{transform: rotate(30deg)}
+  40%{transform: rotate(40deg)}
+  50%{transform: rotate(50deg)}
+  60%{transform: rotate(60deg)}
+  70%{transform: rotate(70deg)}
+  80%{transform: rotate(80deg)}
+  90%{transform: rotate(90deg)}
+  100%{transform: rotate(100deg)}
+  
+}
